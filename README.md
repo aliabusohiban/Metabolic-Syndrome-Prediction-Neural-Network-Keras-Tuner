@@ -170,10 +170,10 @@ network (256 units) learns faster but generalizes similarly to baseline.
 
 ## Model Comparison
 
-| Model | Test Accuracy | Recall (MetSyn) | False Negatives | False Positives |
-|---|---|---|---|---|
-| Baseline ANN | ~83% | 81.8% | 30 | 48 |
-| Best Tuned ANN | ~83% | 81.2% | 31 | 42 |
+| Model | Test Loss | Test Accuracy | Recall (MetSyn) | False Negatives | False Positives |
+|---|---|---|---|---|---|
+| Baseline ANN (64 units, no dropout) | 0.3418 | 83.78% | 81.8% | 30 | 48 |
+| Best Tuned ANN (256 units, dropout=0.2) | 0.3415 | 84.82% | 81.2% | 31 | 42 |
 
 The tuned model reduced false positives by 6 (fewer healthy patients
 incorrectly flagged) while maintaining nearly identical recall. Neither
