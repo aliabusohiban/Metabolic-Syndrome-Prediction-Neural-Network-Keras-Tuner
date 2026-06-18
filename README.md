@@ -103,8 +103,8 @@ Both models follow the task requirement of exactly **1 hidden layer**.
 
 | Parameter | Search Space | Best Value |
 |---|---|---|
-| Units | 32, 64, 128, 256 | 256 |
-| Dropout Rate | 0.0, 0.1, 0.2, 0.3, 0.4 | 0.2 |
+| Units | 32, 64, 128, 256 | 32 |
+| Dropout Rate | 0.0, 0.1, 0.2, 0.3, 0.4 | 0.0 |
 | Optimizer | adam, rmsprop, sgd | rmsprop |
 | Learning Rate | 1e-4, 5e-4, 1e-3, 5e-3 | 0.005 |
 
